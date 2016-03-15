@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BestDealer.Common
 {
-    interface IDeal
+    public interface IDeal
     {
         float Price { get; }
 

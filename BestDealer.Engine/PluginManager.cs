@@ -18,9 +18,7 @@ namespace BestDealer.Engine
 
         private void LoadPlugins()
         {
-            this._plugins = new List<IPlugin>();
-
-            
+            this._plugins = new List<IPlugin>();            
         }
 
         public static PluginManager Instance
@@ -30,5 +28,7 @@ namespace BestDealer.Engine
                 return lazy.Value;
             }
         }
+
+        public List<IPlugin> Plugins { get { return this._plugins; } }
     }
 }
